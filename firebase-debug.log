@@ -1,0 +1,283 @@
+[debug] [2025-04-15T14:20:40.761Z] ----------------------------------------------------------------------
+[debug] [2025-04-15T14:20:40.765Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\amrit\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-04-15T14:20:40.765Z] CLI Version:   14.1.0
+[debug] [2025-04-15T14:20:40.765Z] Platform:      win32
+[debug] [2025-04-15T14:20:40.766Z] Node Version:  v22.14.0
+[debug] [2025-04-15T14:20:40.766Z] Time:          Tue Apr 15 2025 19:50:40 GMT+0530 (India Standard Time)
+[debug] [2025-04-15T14:20:40.766Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-15T14:20:40.776Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-15T14:20:40.777Z] > authorizing via signed-in user (lonewolf11754@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\amrit\OneDrive\Desktop\guess_the_word_game
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-04-15T14:20:57.741Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:20:57.741Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:20:57.743Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-04-15T14:20:58.658Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-04-15T14:20:58.659Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project guess-the-word-11418 (guess the word) 
+[info] 
+=== Dataconnect Setup
+[debug] [2025-04-15T14:21:01.136Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:21:01.137Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:21:01.137Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/guess-the-word-11418/billingInfo [none]
+[debug] [2025-04-15T14:21:02.586Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/guess-the-word-11418/billingInfo 200
+[debug] [2025-04-15T14:21:02.586Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/guess-the-word-11418/billingInfo {"name":"projects/guess-the-word-11418/billingInfo","projectId":"guess-the-word-11418","billingAccountName":"","billingEnabled":false}
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2025-04-15T14:21:02.587Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:21:02.587Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:21:02.587Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/sqladmin.googleapis.com [none]
+[debug] [2025-04-15T14:21:02.587Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/sqladmin.googleapis.com x-goog-quota-user=projects/guess-the-word-11418
+[debug] [2025-04-15T14:21:04.259Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/sqladmin.googleapis.com 200
+[debug] [2025-04-15T14:21:04.259Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/sqladmin.googleapis.com [omitted]
+[info] +  dataconnect: required API sqladmin.googleapis.com is enabled 
+[info] i  dataconnect\dataconnect.yaml is unchanged 
+[info] i  dataconnect\schema\schema.gql is unchanged 
+[info] i  dataconnect\connector\connector.yaml is unchanged 
+[info] i  dataconnect\connector\queries.gql is unchanged 
+[info] i  dataconnect\connector\mutations.gql is unchanged 
+[info] i  If you'd like to add the generated SDK to your app later, run firebase init dataconnect:sdk 
+[info] i  If you'd like to provision a CloudSQL Postgres instance on the Firebase Data Connect no-cost trial:
+1. Please upgrade to the pay-as-you-go (Blaze) billing plan. Visit the following page:
+     https://console.firebase.google.com/project/guess-the-word-11418/usage/details
+2. Run firebase init dataconnect again to configure the Cloud SQL instance.
+3. Run firebase deploy --only dataconnect to deploy your Data Connect service. 
+[info] 
+=== Firestore Setup
+[debug] [2025-04-15T14:21:04.267Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:21:04.267Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:21:04.267Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/firestore.googleapis.com [none]
+[debug] [2025-04-15T14:21:04.267Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/firestore.googleapis.com x-goog-quota-user=projects/guess-the-word-11418
+[debug] [2025-04-15T14:21:04.666Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/firestore.googleapis.com 200
+[debug] [2025-04-15T14:21:04.666Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/firestore.googleapis.com [omitted]
+[debug] [2025-04-15T14:21:04.667Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:21:04.667Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:21:04.667Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/guess-the-word-11418/databases/(default) [none]
+[debug] [2025-04-15T14:21:06.434Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/guess-the-word-11418/databases/(default) 200
+[debug] [2025-04-15T14:21:06.434Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/guess-the-word-11418/databases/(default) {"name":"projects/guess-the-word-11418/databases/(default)","uid":"b86a0211-5b04-407b-ae42-0b082cf32daa","createTime":"2025-04-15T14:19:55.662803Z","updateTime":"2025-04-15T14:19:55.662803Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2025-04-15T14:19:55.662803Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","databaseEdition":"STANDARD","freeTier":true,"etag":"IIDd0oie2owDMNPriued2owD"}
+[debug] [2025-04-15T14:21:06.434Z] database_type: FIRESTORE_NATIVE
+[debug] [2025-04-15T14:21:06.434Z] database_type: FIRESTORE_NATIVE
+[debug] [2025-04-15T14:21:06.435Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-15T14:21:06.435Z] > authorizing via signed-in user (lonewolf11754@gmail.com)
+[debug] [2025-04-15T14:21:06.435Z] [iam] checking project guess-the-word-11418 for permissions ["firebase.projects.get"]
+[debug] [2025-04-15T14:21:06.435Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:21:06.435Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:21:06.435Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/guess-the-word-11418:testIamPermissions [none]
+[debug] [2025-04-15T14:21:06.435Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/guess-the-word-11418:testIamPermissions x-goog-quota-user=projects/guess-the-word-11418
+[debug] [2025-04-15T14:21:06.436Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/guess-the-word-11418:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-04-15T14:21:07.867Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/guess-the-word-11418:testIamPermissions 200
+[debug] [2025-04-15T14:21:07.867Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/guess-the-word-11418:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-04-15T14:21:18.133Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:21:18.133Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:21:18.133Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/guess-the-word-11418/releases pageSize=10&pageToken=
+[debug] [2025-04-15T14:21:19.745Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/guess-the-word-11418/releases 200
+[debug] [2025-04-15T14:21:19.745Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/guess-the-word-11418/releases {"releases":[{"name":"projects/guess-the-word-11418/releases/cloud.firestore","rulesetName":"projects/guess-the-word-11418/rulesets/3c338955-0bbb-4507-bf9f-9a185f86043e","createTime":"2025-04-15T14:20:05.782677Z","updateTime":"2025-04-15T14:20:05.782677Z"}]}
+[debug] [2025-04-15T14:21:19.746Z] Found ruleset: projects/guess-the-word-11418/rulesets/3c338955-0bbb-4507-bf9f-9a185f86043e
+[debug] [2025-04-15T14:21:19.746Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:21:19.746Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:21:19.746Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/guess-the-word-11418/rulesets/3c338955-0bbb-4507-bf9f-9a185f86043e [none]
+[debug] [2025-04-15T14:21:21.421Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/guess-the-word-11418/rulesets/3c338955-0bbb-4507-bf9f-9a185f86043e 200
+[debug] [2025-04-15T14:21:21.421Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/guess-the-word-11418/rulesets/3c338955-0bbb-4507-bf9f-9a185f86043e [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-04-15T14:21:23.869Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:21:23.869Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:21:23.869Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:21:23.869Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:21:23.869Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/guess-the-word-11418/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2025-04-15T14:21:23.872Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/guess-the-word-11418/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2025-04-15T14:21:25.661Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/guess-the-word-11418/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2025-04-15T14:21:25.661Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/guess-the-word-11418/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2025-04-15T14:21:26.015Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/guess-the-word-11418/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2025-04-15T14:21:26.015Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/guess-the-word-11418/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/guess-the-word-11418/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Genkit Setup
+[debug] [2025-04-15T14:21:29.717Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-15T14:21:29.717Z] > authorizing via signed-in user (lonewolf11754@gmail.com)
+[debug] [2025-04-15T14:21:29.717Z] [iam] checking project guess-the-word-11418 for permissions ["firebase.projects.get"]
+[debug] [2025-04-15T14:21:29.718Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:21:29.718Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:21:29.718Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/guess-the-word-11418:testIamPermissions [none]
+[debug] [2025-04-15T14:21:29.718Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/guess-the-word-11418:testIamPermissions x-goog-quota-user=projects/guess-the-word-11418
+[debug] [2025-04-15T14:21:29.718Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/guess-the-word-11418:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-04-15T14:21:31.180Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/guess-the-word-11418:testIamPermissions 200
+[debug] [2025-04-15T14:21:31.180Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/guess-the-word-11418:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-04-15T14:21:31.180Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:21:31.180Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:21:31.180Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:21:31.180Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:21:31.180Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-04-15T14:21:31.180Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/guess-the-word-11418
+[debug] [2025-04-15T14:21:31.188Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-04-15T14:21:31.188Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/guess-the-word-11418
+[debug] [2025-04-15T14:21:32.860Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/runtimeconfig.googleapis.com 200
+[debug] [2025-04-15T14:21:32.860Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-04-15T14:21:32.867Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/cloudfunctions.googleapis.com 200
+[debug] [2025-04-15T14:21:32.867Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2025-04-15T14:21:32.867Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:21:32.867Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:21:32.867Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2025-04-15T14:21:32.867Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/guess-the-word-11418
+[debug] [2025-04-15T14:21:33.446Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2025-04-15T14:21:33.446Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2025-04-15T14:21:43.453Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:21:43.454Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:21:43.454Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-04-15T14:21:43.454Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/guess-the-word-11418
+[debug] [2025-04-15T14:21:45.159Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/cloudfunctions.googleapis.com 200
+[debug] [2025-04-15T14:21:45.159Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/tsconfig.json 
+[info] +  Wrote functions/tsconfig.dev.json 
+[info] +  Wrote functions/src/index.ts 
+[info] +  Wrote functions/.gitignore 
+[info] 
+[info] i  genkit: Installing Genkit CLI version 1.6.0
+ 
+[info] i  genkit: Installing NPM packages for genkit 
+[info] +  genkit: Successfully installed NPM packages 
+[info] i  genkit: Updating tsconfig.json 
+[info] +  genkit: Successfully updated tsconfig.json 
+[info] i  genkit: Updating package.json 
+[info] +  genkit: Successfully updated package.json 
+[info] i  genkit: Generating sample file 
+[info] +  genkit: Successfully generated sample file (src/genkit-sample.ts) 
+[info] 
+Login to Google Cloud using:
+[info]     gcloud auth application-default login --project undefined
+
+[info] Then start the Genkit developer experience by running:
+[info]     cd functions && npm run genkit:start
+[info] 
+=== Functions Setup
+[debug] [2025-04-15T14:24:40.249Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-15T14:24:40.249Z] > authorizing via signed-in user (lonewolf11754@gmail.com)
+[debug] [2025-04-15T14:24:40.249Z] [iam] checking project guess-the-word-11418 for permissions ["firebase.projects.get"]
+[debug] [2025-04-15T14:24:40.250Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:24:40.250Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:24:40.250Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/guess-the-word-11418:testIamPermissions [none]
+[debug] [2025-04-15T14:24:40.250Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/guess-the-word-11418:testIamPermissions x-goog-quota-user=projects/guess-the-word-11418
+[debug] [2025-04-15T14:24:40.250Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/guess-the-word-11418:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-04-15T14:24:41.824Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/guess-the-word-11418:testIamPermissions 200
+[debug] [2025-04-15T14:24:41.824Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/guess-the-word-11418:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-04-15T14:24:41.825Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:24:41.825Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:24:41.825Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:24:41.825Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:24:41.825Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-04-15T14:24:41.825Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/guess-the-word-11418
+[debug] [2025-04-15T14:24:41.829Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-04-15T14:24:41.829Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/guess-the-word-11418
+[debug] [2025-04-15T14:24:43.835Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/runtimeconfig.googleapis.com 200
+[debug] [2025-04-15T14:24:43.835Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-04-15T14:24:43.848Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/cloudfunctions.googleapis.com 200
+[debug] [2025-04-15T14:24:43.848Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/guess-the-word-11418/services/cloudfunctions.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] 
+Overwriting codebase default...
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Apphosting Setup
+[debug] [2025-04-15T14:25:14.782Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:25:14.784Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:25:14.784Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/guess-the-word-11418/billingInfo [none]
+[debug] [2025-04-15T14:25:16.487Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/guess-the-word-11418/billingInfo 200
+[debug] [2025-04-15T14:25:16.487Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/guess-the-word-11418/billingInfo {"name":"projects/guess-the-word-11418/billingInfo","projectId":"guess-the-word-11418","billingAccountName":"","billingEnabled":false}
+[info] i  Writing default settings to apphosting.yaml... 
+[info] +  Wrote apphosting.yaml 
+[info] +  Create a new App Hosting backend with `firebase apphosting:backends:create` 
+[info] 
+=== Hosting Setup
+[debug] [2025-04-15T14:25:16.492Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:25:16.492Z] Checked if tokens are valid: true, expires at: 1744730287064
+[debug] [2025-04-15T14:25:16.493Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/guess-the-word-11418 [none]
+[debug] [2025-04-15T14:25:17.020Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/guess-the-word-11418 200
+[debug] [2025-04-15T14:25:17.020Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/guess-the-word-11418 {"projectId":"guess-the-word-11418","projectNumber":"915349476683","displayName":"guess the word","name":"projects/guess-the-word-11418","resources":{"hostingSite":"guess-the-word-11418"},"state":"ACTIVE","etag":"1_0e767165-d618-4670-bffe-0a9a9c784482"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2025-04-15T14:25:22.848Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2025-04-15T14:25:22.916Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2025-04-15T14:25:22.916Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"11.6.0","browserURL":"https://www.gstatic.com/firebasejs/11.6.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/11.6.0/firebase.tgz"},"live":{"version":"11.6","browserURL":"https://www.gstatic.com/firebasejs/live/11.6/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/11.6/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/11.6.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/11.6.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/11.6.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/11.6.0/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/11.6.0/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/11.6.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/11.6.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/11.6.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/11.6.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/11.6.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/11.6.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/11.6.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/11.6.0/firebase-database.js","vertexai":"https://www.gstatic.com/firebasejs/11.6.0/firebase-vertexai.js","data-connect":"https://www.gstatic.com/firebasejs/11.6.0/firebase-data-connect.js","firestore.memory":"https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\amrit\OneDrive\Desktop\guess_the_word_game is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=230032166&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2025-04-15T14:25:23.936Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2025-04-15T14:25:23.936Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2025-04-15T14:25:24.518Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2025-04-15T14:25:24.518Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2025-04-15T14:25:24.526Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2025-04-15T14:25:25.075Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2025-04-15T14:25:25.075Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"AmritbanSingh","id":203860259,"node_id":"U_kgDODCapIw","avatar_url":"https://avatars.githubusercontent.com/u/203860259?v=4","gravatar_id":"","url":"https://api.github.com/users/AmritbanSingh","html_url":"https://github.com/AmritbanSingh","followers_url":"https://api.github.com/users/AmritbanSingh/followers","following_url":"https://api.github.com/users/AmritbanSingh/following{/other_user}","gists_url":"https://api.github.com/users/AmritbanSingh/gists{/gist_id}","starred_url":"https://api.github.com/users/AmritbanSingh/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/AmritbanSingh/subscriptions","organizations_url":"https://api.github.com/users/AmritbanSingh/orgs","repos_url":"https://api.github.com/users/AmritbanSingh/repos","events_url":"https://api.github.com/users/AmritbanSingh/events{/privacy}","received_events_url":"https://api.github.com/users/AmritbanSingh/received_events","type":"User","user_view_type":"private","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"notification_email":null,"public_repos":0,"public_gists":0,"followers":0,"following":0,"created_at":"2025-03-18T14:19:08Z","updated_at":"2025-04-15T13:25:42Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":0,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as AmritbanSingh 
+[info] 
+[debug] [2025-04-15T14:25:34.535Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-15T14:25:35.006Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2025-04-15T14:25:35.007Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2025-04-15T14:25:35.918Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-04-15T14:25:36.204Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2025-04-15T14:25:36.204Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
